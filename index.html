@@ -1,0 +1,151 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Prajwal N | .NET Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="Backend-focused .NET Web Developer in Bangalore. I build high-performance APIs and scalable systems.">
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:200,300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+  <div id="content"></div>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    const DATA = {
+      name: "Hey, I'm Prajwal",
+      subtext: ".NET Web Developer based in Bangalore, India.",
+      jobStatus: "Software Engineer Co-op @ Joyalukkas",
+      githubURL: 'https://github.com/Prajwaln8',
+      linkedinURL: 'https://www.linkedin.com/in/prajwal-n-9a687128a/',
+      resumeURL: 'https://drive.google.com/file/d/1kGJeTvXsedBFt7sI6W0H9EzBWcfrUPuN/view?usp=sharing'
+    };
+
+    const App = ({ profileData }) => {
+      return (
+        <div className="app">
+          <Left {...profileData} />
+          <Right {...profileData} />
+        </div>
+      );
+    };
+
+    const Left = ({ name, subtext, jobStatus, githubURL, linkedinURL }) => {
+      return (
+        <div className="left">
+          <div className="bg-img"></div>
+          <div className="left-inner">
+            <div className="info">
+              <h2 className="name">{name}</h2>
+              <div className="subtext">{subtext}</div>
+              <div className="jobStatus">{jobStatus}</div>
+              <div className="social-links">
+                <a href={githubURL} target="_blank"><i className="fa fa-github"></i></a>
+                <a href={linkedinURL} target="_blank"><i className="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    };
+
+    const Right = ({ resumeURL }) => {
+      return (
+        <div className="right">
+          <div className="right-inner">
+
+            {/* Introduction */}
+            <section className="introduction">
+              <h4>Intro</h4>
+              <div className="content">
+                <p className="intro-p">I'm a backend-focused web developer with over 3 years of experience in ASP.NET, .NET Core, and RESTful API development. I thrive on solving complex backend problems, leading technical migrations, and ensuring high-performance systems.</p>
+                <p className="intro-p">Currently, I'm enhancing 60+ APIs and maintaining critical systems for Himalaya Wellness. I believe in writing clean, efficient code and staying updated with evolving technologies.</p>
+              </div>
+            </section>
+
+            {/* Skills */}
+            <section className="skills">
+              <h4>Skills</h4>
+              <div className="content">
+                <div className="skill-category"><strong>Languages:&nbsp;</strong> C#, .NET Core (6/8), ASP.NET, MVC</div>
+                <div className="skill-category"><strong>Libraries & Frameworks:&nbsp;</strong> jQuery, Bootstrap, Entity Framework, ADO.NET, LINQ, Dapper, JavaScript</div>
+                <div className="skill-category"><strong>Databases:&nbsp;</strong> SQL Server</div>
+                <div className="skill-category"><strong>Software Design:&nbsp;</strong> RESTful APIs, Design Patterns</div>
+                <div className="skill-category"><strong>Tools:&nbsp;</strong> Git, Postman, Swagger, Visual Studio, Windows Services</div>
+              </div>
+            </section>
+
+            {/* Education */}
+            <section className="education">
+              <h4>Education</h4>
+              <div className="content">
+                <div className="university">Visvesvaraya Technological University, Mysore</div>
+                <div className="college">MCA (Masters of Computer Application)</div>
+                <div className="major"><strong>Major:</strong> Computer Science</div>
+                <div className="grad-date">Expected Graduation: Oct 2022</div>
+              </div>
+            </section>
+
+            {/* Experience */}
+            <section className="experience">
+              <h4>Experience</h4>
+              <div className="content">
+                <div className="exp-item">
+                  <div className="job">
+                    <a className="company" href="https://www.talentpace.com/" target="_blank">TalentPace — Software Engineer</a>
+                    <div className="duration">Mar 2022 – May 2025</div>
+                  </div>
+                  <div className="title">Himalaya Wellness (Aug 2023–May 2025)</div>
+                  <ul className="description">
+                    <li>Migrated Retail360 from MVC to .NET 8 Core (30% performance boost)</li>
+                    <li>Optimized 60+ APIs using Dapper (25% faster DB performance)</li>
+                    <li>Developed 30+ APIs for Vriddhi mobile app</li>
+                    <li>Resolved 80% of live bugs within 24 hours</li>
+                  </ul>
+                  <div className="title">Genesis Project (Jun 2022 – Jul 2023)</div>
+                  <ul className="description">
+                    <li>Built 40+ high-performance APIs with Entity Framework</li>
+                    <li>Refactored backend architecture to improve scalability</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            {/* Projects */}
+            <section className="projects">
+              <h4>Projects</h4>
+              <div className="content">
+                <div className="project-item">
+                  <div className="project-title">AMS (Activity Management System) - Genisys</div>
+                  <p className="project-desc">Web app for Novo Nordisk to organize & track meetings. Structured approval workflows, expense tracking, and PDF reporting. Built with ASP.NET MVC + SQL Server.</p>
+                </div>
+                <div className="project-item">
+                  <div className="project-title">Retail360 Migration & API Optimization - Himalaya</div>
+                  <p className="project-desc">Led migration to .NET 8 Core, improved performance by 30%. Refactored 60+ APIs using Dapper. Developed APIs for Vriddhi app and maintained live backend systems.</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Resume link */}
+            <a className="resume" href={resumeURL} target="_blank">
+              <div className="resume-link">Grab a PDF of my full resume</div>
+            </a>
+
+          </div>
+        </div>
+      );
+    };
+    ReactDOM.createRoot(document.getElementById("content")).render(<App profileData={DATA} />);
+  </script>
+</body>
+
+</html>
