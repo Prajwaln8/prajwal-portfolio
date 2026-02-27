@@ -105,10 +105,21 @@ a {
   margin-top: 30px;
 }
 
+/* .left .info .fa {
+  margin: 10px;
+  font-size: 24px;
+  color: #fff;
+} */
+
 .left .info .fa {
   margin: 10px;
   font-size: 24px;
   color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.left .info .social-links a:hover .fa {
+  transform: translateY(-2px);
 }
 
 @media screen and (max-width: 1000px) {
@@ -291,6 +302,21 @@ a {
 .right .projects .project-desc {
   font-size: 15px;
   margin: 0 0 10px;
+}
+
+.right .projects .project-desc {
+  font-size: 15px;
+  margin: 0 0 10px;
+}
+
+.right .last-updated {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #8d8d8d;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
 }
 
 .right a.resume {
