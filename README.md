@@ -22,3 +22,4 @@ Then visit `http://localhost:8080`.
 - Added a new **Highlights** section in the profile content.
 - Improved external link safety/accessibility using `rel="noreferrer"` and `aria-label`s.
 - Added a **Last updated** marker in the right panel.
+- Need to update the joyalukas details
